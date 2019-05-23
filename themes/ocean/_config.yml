@@ -1,10 +1,10 @@
 
 # Menu
 menu:
-  Home: /
-  Archives: /archives
-  Gallery: /gallery
-  About: /about
+  主页: /
+  历程: /archives
+  作品: /gallery
+  关于: /about
 rss: /atom.xml
 
 
@@ -40,7 +40,7 @@ feed:
   order_by: -date
 
 # Local search
-search_text: Search
+search_text: 搜索
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
   enable: true
@@ -60,6 +60,12 @@ gitalk:
   owner: shenrentong # 你的 Github ID
   admin: shenrentong # 你的 Github ID 就可以，官方注释（Facebook-like distraction free mode）说明还可以添加其他有权限的人
 
+post_wordcount:
+  item_text: true
+  wordcount: true         # 单篇 字数统计
+  min2read: true          # 单篇 阅读时长
+  totalcount: false       # 网站 字数统计
+  separated_meta: true
 # post_copyright:
 #   enable: true 
 #   author: shenrentong 
