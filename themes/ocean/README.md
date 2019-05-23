@@ -51,7 +51,7 @@ brand: /images/hexo.svg
 # Because I put videos in multiple formats on the same path, I just labeled the path here.
 ocean:
   overlay: true
-  path: images/ocean/      # Video storage path, formats: mp4/ogg/webm
+  path: images/ocean/      # Video storage path, formats: mp4/ogg/webm 如果发布到iis报404 mime类型添加一个MP4的就行
   brand: /images/hexo-inverted.svg      # Optional, a small logo
 
 # Content
