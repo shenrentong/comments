@@ -91,5 +91,9 @@ theme: ocean
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# 下载部署依赖：hexo-deployer-git 部署命令： hexo clean && hexo deploy
 deploy:
   type: git
+  repo: https://github.com/shenrentong/comments.git #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io 库（Repository）地址
+  branch: blog # 分支名称。如果您使用的是 GitHub 或 GitCafe 的话，程序会尝试自动检测。
+  message: message # 自定义提交信息 (默认为 Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }})
