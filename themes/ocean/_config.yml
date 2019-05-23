@@ -28,9 +28,6 @@ nav_text:
   post_prev: Newer posts
   post_next: Olde posts
 
-# fancybox
-fancybox: true
-
 # RSS
 feed:
   type: atom
@@ -62,3 +59,16 @@ gitalk:
   repo: comments # 换成你创建的仓库，首先确保该仓库已经创建，其次只需要写名称，比如 "gitalk"，否则 "问题三"
   owner: shenrentong # 你的 Github ID
   admin: shenrentong # 你的 Github ID 就可以，官方注释（Facebook-like distraction free mode）说明还可以添加其他有权限的人
+
+# post_copyright:
+#   enable: true 
+#   author: shenrentong 
+#   copyright_text: 作者拥有版权，请注明出处转载。
+
+# shareto: true
+
+# donate:
+#   enable: true 
+#   alipay_qr: /images/weCode.jpg
+#   wechat_qr: /images/weCode.jpg
+#   paypal_url:
