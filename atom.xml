@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>前端博客</title>
+  
+  <subtitle>爱设计 | 爱前端 | 爱摄影 | 爱生活</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-05-24T10:01:26.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>SHEN REN TONG</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录前端的一些事</title>
+    <link href="http://yoursite.com/2019/05/24/%E8%AE%B0%E5%BD%95%E5%89%8D%E7%AB%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
+    <id>http://yoursite.com/2019/05/24/记录前端的一些事/</id>
+    <published>2019-05-24T10:01:05.000Z</published>
+    <updated>2019-05-24T10:01:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>HEXO 博客的搭建</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;HEXO 博客的搭建&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/05/22/hello-world/"/>
+    <id>http://yoursite.com/2019/05/22/hello-world/</id>
+    <published>2019-05-22T07:28:54.000Z</published>
+    <updated>2019-05-22T07:28:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a><br>comments: true</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>写文字参数</title>
+    <link href="http://yoursite.com/2013/07/13/post/"/>
+    <id>http://yoursite.com/2013/07/13/post/</id>
+    <published>2013-07-13T12:46:25.000Z</published>
+    <updated>2013-07-13T12:46:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于我比较笨还英文不好，所以按照 Gitalk 提供的文档给 Hexo 添加评论功能，简直就是不能行！各种报错后，翻看 Issues、Google、百度… 用了一天时间终于 Gitalk 可用了。<br>这里我分享一下我的添加过程与报错问题的解决方法，供参考借鉴！</p><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由于我比较笨还英文不好，所以按照 Gitalk 提供的文档给 Hexo 添加评论功能，简直就是不能行！各种报错后，翻看 Issues、Google、百度… 用了一天时间终于 Gitalk 可用了。&lt;br&gt;这里我分享一下我的添加过程与报错问题的解决方法，供参考借鉴！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="艺术" scheme="http://yoursite.com/tags/%E8%89%BA%E6%9C%AF/"/>
+    
+      <category term="书法" scheme="http://yoursite.com/tags/%E4%B9%A6%E6%B3%95/"/>
+    
+      <category term="博客搭建" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="个人空间" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA%E7%A9%BA%E9%97%B4/"/>
+    
+  </entry>
+  
+</feed>

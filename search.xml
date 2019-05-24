@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[记录前端的一些事]]></title>
+    <url>%2F2019%2F05%2F24%2F%E8%AE%B0%E5%BD%95%E5%89%8D%E7%AB%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%2F</url>
+    <content type="text"><![CDATA[HEXO 博客的搭建]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F05%2F22%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deploymentcomments: true]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[写文字参数]]></title>
+    <url>%2F2013%2F07%2F13%2Fpost%2F</url>
+    <content type="text"><![CDATA[由于我比较笨还英文不好，所以按照 Gitalk 提供的文档给 Hexo 添加评论功能，简直就是不能行！各种报错后，翻看 Issues、Google、百度… 用了一天时间终于 Gitalk 可用了。这里我分享一下我的添加过程与报错问题的解决方法，供参考借鉴！]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>艺术</tag>
+        <tag>书法</tag>
+        <tag>博客搭建</tag>
+        <tag>hexo</tag>
+        <tag>个人空间</tag>
+      </tags>
+  </entry>
+</search>
