@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-24T10:01:26.000Z</updated>
+  <updated>2019-06-13T12:46:25.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,95 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>记录前端的一些事</title>
-    <link href="http://yoursite.com/2019/05/24/%E8%AE%B0%E5%BD%95%E5%89%8D%E7%AB%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
-    <id>http://yoursite.com/2019/05/24/记录前端的一些事/</id>
-    <published>2019-05-24T10:01:05.000Z</published>
-    <updated>2019-05-24T10:01:26.000Z</updated>
+    <title>免费的电子书网站和书推荐</title>
+    <link href="http://yoursite.com/2019/06/13/post/"/>
+    <id>http://yoursite.com/2019/06/13/post/</id>
+    <published>2019-06-13T12:46:25.000Z</published>
+    <updated>2019-06-13T12:46:25.000Z</updated>
     
-    <content type="html"><![CDATA[<p>HEXO 博客的搭建</p>]]></content>
+    <content type="html"><![CDATA[<p>《bookset》<br>网址：<a href="https://bookset.me/" target="_blank" rel="noopener">https://bookset.me/</a></p><p>描述：<br>    这个网站可以免费下载各种书籍有开发的还有其他的书可以直接点击下载，<br>    但是有些新的开发书籍是没有的，我看中的一点就是可以免费下载。</p><p>《我的小书屋》<br>网址：<a href="http://mebook.cc/" target="_blank" rel="noopener">http://mebook.cc/</a></p><p>描述：<br>    这个网站下载只能是百度网盘，微软云盘，天翼云盘(推荐) 如果公司网络有限制下不了，<br>    用自己的网络下载就可以，这个包括的种类也还行：畅销小说 网络小说 合集资源 多看专区 杂志·期刊 漫画 工具书 原版书籍 轻小说</p><p>书名推荐<br>入门书籍<br>《JavaScript Dom编程艺术》<br>《JavaScript权威指南》</p><p>初级书籍<br>《JavaScript高级程序设计》<br>《高性能JavaScript》<br>《JavaScript语言精髓与编程实践》</p><p>中级书籍<br>《JavaScript DOM高级程序设计》<br>《JavaScript设计模式》<br>最后</p><p>目录导航<br>写在前面<br>本文转自:<a href="http://blog.csdn.net/yangnihaozan/article/details/48294545" target="_blank" rel="noopener">http://blog.csdn.net/yangnihaozan/article/details/48294545</a></p><p>在当下，极多的程序员是通过自学来完成入门以及提升的。对于JavaScript的学习来说，同样不例外。许多新手入门javascript选择通过视频教程或者论坛交流的方式进行学习，这种方式固然较为轻松和便捷，但在知识的获取上有些碎片化，对于新手来说不是很好。</p><p>在javascript的入门阶段，通过书籍来学习对于新手来说才是最好的手段。书籍的学习固然比较枯燥，但是也是最权威，最系统化的，对于新手来说能够快速的完成基础知识的奠基，而对于之后进一步的提升也是大有裨益。这里笔者就结合自身经验为各位javascript新手推荐几本不容错过的javascript书籍。</p><p>目录导航<br>入门书籍<br>看完之后基本就能够完成一个新手到入门的过程了，能够掌握JS基础语法知识和DOM基础知识，读懂接下来笔者推荐的初级书籍。</p><p>《JavaScript Dom编程艺术》<br>此书从JS的历史到JS基础语法知识再到M介绍和简单的使用都比较详尽，内容对于新手来说，简洁、实用、详细、易懂。书不厚，相信很快就能看完。</p><p>《JavaScript权威指南》<br>听名字就知道十分强大。网上关于此书的评价很多，意思大概都是说这书就是一个JS的文档手册。如果学习，记得看最新一版的内容。</p><p>js语言有别于传统面向对象语言，所以还是从基础开始看起比较好。以上两本结束之后，就可以来看一些初级的了。这里笔者对初级的定义为“能在中级和高级开发的指导下完成工作。”</p><p>目录导航<br>初级书籍<br>笔者对初级的定义为“能在中级和高级开发的指导下完成工作。”相比于入门书籍，在关注基础知识的同时，开始讲述一些较为深入的东西。在这个阶段，合适的书有以下几本。</p><p>《JavaScript高级程序设计》<br>此书的作者是Nicholas C.Zakas,雅虎的前端工程师，YUI的代码贡献者，本书的含金量可想而知，事实上他出的书也确实广受好评，拥簇者众多。</p><p>阅读本书只要有JS基础语法知识和DOM基础知识就行，而且本书开始阶段还是介绍JS和DOM的语法知识。笔者这里重点推荐一下第五章(类型),第六章(OOP),第七章(匿名),个人感觉这几章是本书的精华所在，多看几遍,至少要完全看明白，能为以后进阶打好基础。</p><p>《高性能JavaScript》<br>这本书还是Nicholas C.Zakas所著，经典之作，书中大量举例了各种不同写法的JavaScript在浏览器中的性能情况，对规范JavaScript代码和提升性能有很好的帮助，最后提到了很多工具和性能测试的方法，都是非常有实际作用的，尤其对于初学者来说，看完后提升效果明显。</p><p>《JavaScript语言精髓与编程实践》<br>本书与上面的那本在内容上有些重叠，但仍然值得一看。因为本书对JS语言本质的描述非常到位，可以说是介绍JavaScript语言本质的权威书籍，从 “对象”，“函数”，“继承”，“数组”等等多个重要知识着手，多看几遍，每一遍都会有新收获。</p><p>目录导航<br>中级书籍<br>笔者对中级的定义为“能独立或在较少的指导下完成工作，并且对产品与项目有自己的看法。”这个阶段的书籍深入且复杂，要耐心的思考才能读懂，当然获得的提升不言而喻。</p><p>《JavaScript DOM高级程序设计》<br>本书的翻译一般，代码也有少许错误，可是这不影响这本书的强大，通过学习本书，可以理解一个JS的库如何产生，自己动手写一个简单的自己的JS库</p><p>，如果你打算研究其他的JS库或者正在研究其他的JS库，那么这本书会使你的理解 达到新的高度，进阶高级必读，写库必读。</p><p>《JavaScript设计模式》<br>本书对JS的“模仿接口”，“封装”，“继承”，“链式调用”，“工厂模式”等各种具体的设计模式及其在JavaScript语言中的应用进行了详细的介绍，运用设计模式使代码更模块化、更高效并且更易维护。</p><p>目录导航<br>最后<br>以上的书籍是一个从基础到入门，从入门的提升的过程，也是笔者的经验总结。对于新手入门javascript来说，自认为帮助不小，能够少走一些弯路。对于语言掌握其实是一个无止尽的过程，没有终点。即使在你掌握了较为深入的程度后，笔者仍然建议去回过头来重新阅读这些书籍，必然还会有新的收获。</p><a id="more"></a><hr>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;HEXO 博客的搭建&lt;/p&gt;
-
-      
+      &lt;p&gt;《bookset》&lt;br&gt;网址：&lt;a href=&quot;https://bookset.me/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://bookset.me/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;描述：&lt;br&gt;    这个网站可以免费下载各种书籍有开发的还有其他的书可以直接点击下载，&lt;br&gt;    但是有些新的开发书籍是没有的，我看中的一点就是可以免费下载。&lt;/p&gt;
+&lt;p&gt;《我的小书屋》&lt;br&gt;网址：&lt;a href=&quot;http://mebook.cc/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://mebook.cc/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;描述：&lt;br&gt;    这个网站下载只能是百度网盘，微软云盘，天翼云盘(推荐) 如果公司网络有限制下不了，&lt;br&gt;    用自己的网络下载就可以，这个包括的种类也还行：畅销小说 网络小说 合集资源 多看专区 杂志·期刊 漫画 工具书 原版书籍 轻小说&lt;/p&gt;
+&lt;p&gt;书名推荐&lt;br&gt;入门书籍&lt;br&gt;《JavaScript Dom编程艺术》&lt;br&gt;《JavaScript权威指南》&lt;/p&gt;
+&lt;p&gt;初级书籍&lt;br&gt;《JavaScript高级程序设计》&lt;br&gt;《高性能JavaScript》&lt;br&gt;《JavaScript语言精髓与编程实践》&lt;/p&gt;
+&lt;p&gt;中级书籍&lt;br&gt;《JavaScript DOM高级程序设计》&lt;br&gt;《JavaScript设计模式》&lt;br&gt;最后&lt;/p&gt;
+&lt;p&gt;目录导航&lt;br&gt;写在前面&lt;br&gt;本文转自:&lt;a href=&quot;http://blog.csdn.net/yangnihaozan/article/details/48294545&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/yangnihaozan/article/details/48294545&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在当下，极多的程序员是通过自学来完成入门以及提升的。对于JavaScript的学习来说，同样不例外。许多新手入门javascript选择通过视频教程或者论坛交流的方式进行学习，这种方式固然较为轻松和便捷，但在知识的获取上有些碎片化，对于新手来说不是很好。&lt;/p&gt;
+&lt;p&gt;在javascript的入门阶段，通过书籍来学习对于新手来说才是最好的手段。书籍的学习固然比较枯燥，但是也是最权威，最系统化的，对于新手来说能够快速的完成基础知识的奠基，而对于之后进一步的提升也是大有裨益。这里笔者就结合自身经验为各位javascript新手推荐几本不容错过的javascript书籍。&lt;/p&gt;
+&lt;p&gt;目录导航&lt;br&gt;入门书籍&lt;br&gt;看完之后基本就能够完成一个新手到入门的过程了，能够掌握JS基础语法知识和DOM基础知识，读懂接下来笔者推荐的初级书籍。&lt;/p&gt;
+&lt;p&gt;《JavaScript Dom编程艺术》&lt;br&gt;此书从JS的历史到JS基础语法知识再到M介绍和简单的使用都比较详尽，内容对于新手来说，简洁、实用、详细、易懂。书不厚，相信很快就能看完。&lt;/p&gt;
+&lt;p&gt;《JavaScript权威指南》&lt;br&gt;听名字就知道十分强大。网上关于此书的评价很多，意思大概都是说这书就是一个JS的文档手册。如果学习，记得看最新一版的内容。&lt;/p&gt;
+&lt;p&gt;js语言有别于传统面向对象语言，所以还是从基础开始看起比较好。以上两本结束之后，就可以来看一些初级的了。这里笔者对初级的定义为“能在中级和高级开发的指导下完成工作。”&lt;/p&gt;
+&lt;p&gt;目录导航&lt;br&gt;初级书籍&lt;br&gt;笔者对初级的定义为“能在中级和高级开发的指导下完成工作。”相比于入门书籍，在关注基础知识的同时，开始讲述一些较为深入的东西。在这个阶段，合适的书有以下几本。&lt;/p&gt;
+&lt;p&gt;《JavaScript高级程序设计》&lt;br&gt;此书的作者是Nicholas C.Zakas,雅虎的前端工程师，YUI的代码贡献者，本书的含金量可想而知，事实上他出的书也确实广受好评，拥簇者众多。&lt;/p&gt;
+&lt;p&gt;阅读本书只要有JS基础语法知识和DOM基础知识就行，而且本书开始阶段还是介绍JS和DOM的语法知识。笔者这里重点推荐一下第五章(类型),第六章(OOP),第七章(匿名),个人感觉这几章是本书的精华所在，多看几遍,至少要完全看明白，能为以后进阶打好基础。&lt;/p&gt;
+&lt;p&gt;《高性能JavaScript》&lt;br&gt;这本书还是Nicholas C.Zakas所著，经典之作，书中大量举例了各种不同写法的JavaScript在浏览器中的性能情况，对规范JavaScript代码和提升性能有很好的帮助，最后提到了很多工具和性能测试的方法，都是非常有实际作用的，尤其对于初学者来说，看完后提升效果明显。&lt;/p&gt;
+&lt;p&gt;《JavaScript语言精髓与编程实践》&lt;br&gt;本书与上面的那本在内容上有些重叠，但仍然值得一看。因为本书对JS语言本质的描述非常到位，可以说是介绍JavaScript语言本质的权威书籍，从 “对象”，“函数”，“继承”，“数组”等等多个重要知识着手，多看几遍，每一遍都会有新收获。&lt;/p&gt;
+&lt;p&gt;目录导航&lt;br&gt;中级书籍&lt;br&gt;笔者对中级的定义为“能独立或在较少的指导下完成工作，并且对产品与项目有自己的看法。”这个阶段的书籍深入且复杂，要耐心的思考才能读懂，当然获得的提升不言而喻。&lt;/p&gt;
+&lt;p&gt;《JavaScript DOM高级程序设计》&lt;br&gt;本书的翻译一般，代码也有少许错误，可是这不影响这本书的强大，通过学习本书，可以理解一个JS的库如何产生，自己动手写一个简单的自己的JS库&lt;/p&gt;
+&lt;p&gt;，如果你打算研究其他的JS库或者正在研究其他的JS库，那么这本书会使你的理解 达到新的高度，进阶高级必读，写库必读。&lt;/p&gt;
+&lt;p&gt;《JavaScript设计模式》&lt;br&gt;本书对JS的“模仿接口”，“封装”，“继承”，“链式调用”，“工厂模式”等各种具体的设计模式及其在JavaScript语言中的应用进行了详细的介绍，运用设计模式使代码更模块化、更高效并且更易维护。&lt;/p&gt;
+&lt;p&gt;目录导航&lt;br&gt;最后&lt;br&gt;以上的书籍是一个从基础到入门，从入门的提升的过程，也是笔者的经验总结。对于新手入门javascript来说，自认为帮助不小，能够少走一些弯路。对于语言掌握其实是一个无止尽的过程，没有终点。即使在你掌握了较为深入的程度后，笔者仍然建议去回过头来重新阅读这些书籍，必然还会有新的收获。&lt;/p&gt;
     
     </summary>
     
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="艺术" scheme="http://yoursite.com/tags/%E8%89%BA%E6%9C%AF/"/>
+    
+      <category term="书法" scheme="http://yoursite.com/tags/%E4%B9%A6%E6%B3%95/"/>
+    
+      <category term="博客搭建" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="个人空间" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA%E7%A9%BA%E9%97%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分享一篇心灵鸡汤</title>
+    <link href="http://yoursite.com/2019/05/24/%E8%AE%B0%E5%BD%95%E5%89%8D%E7%AB%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B/"/>
+    <id>http://yoursite.com/2019/05/24/记录前端的一些事/</id>
+    <published>2019-05-24T10:01:00.000Z</published>
+    <updated>2019-06-13T09:30:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#只有放下，才能重新开始</p><p>我是演说家</p><p>Take Me Home,Country Roads<br>John Denver - Take Me Home Country Roads</p><p>来源：净物（ID：cystyle001）<br>图片：微博@加州夏扇</p><p>生而为人，烦恼总是相伴的。一旦纠结于自己无可奈何的事，便会痛苦不堪。想明白了，你就不会那么累了。</p><p>对过去，要淡。</p><p>你是否因为别人的想法，一而再地委屈自己？你是否因为他人做错的事情，一直耿耿于怀？你是否因为一段不再有可能的感情，久久不能释怀？</p><p>仔细想想，其实我们每个人都有这样的时候。虽然你竭尽所能，还是可能会遭遇工作的低谷、生活的窘迫、情感的失意、学业的压力……</p><p>不知你有没有听过这句话：“不要在一件别扭的事上纠缠太久。纠缠久了，你会烦，会痛，会厌，会累，会神伤，会心碎。实际上，到最后，你不是跟事过不去，而是跟自己过不去。无论多别扭，你都要学会抽身而退。”</p><p>曾看过这样一个故事：一个人上火车时不小心掉了一只新鞋，等火车开动了他才发现。这时，他毫不犹豫地把另一只鞋也从窗口扔了出去。其他乘客很不理解，他解释说，那双鞋不论多么昂贵，对他而言都已经失去作用了，而捡到这双鞋的人就不同了。所以，与其留一只对自己无用的鞋，倒不如选择放弃，或许会成全另一个人呢？</p><p>有些人，有些事，该放手就要放手，该不在乎就不在乎。人生在世，很多事情，只有放下，才能重新开始。<br><a href="https://mmbiz.qpic.cn/mmbiz_jpg/qia9PLAqFQ6PCNCvPKENIpQPdzGufYNtXuu8vJoAPqdk5AoTIO9IIOTnSBORuMAp9QhicCf8buUAuzboiaKtcicLYg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" target="_blank" rel="noopener">https://mmbiz.qpic.cn/mmbiz_jpg/qia9PLAqFQ6PCNCvPKENIpQPdzGufYNtXuu8vJoAPqdk5AoTIO9IIOTnSBORuMAp9QhicCf8buUAuzboiaKtcicLYg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1</a><br><img src="/images/image.png" alt="overwrote existing file"><br>对未来，要信。</p><p>人这一辈子，总是不知不觉背了很多压力。常听到有人抱怨：对未来感到迷茫，觉得生活没有期盼。</p><p>其实，大家都一样，谁都迷茫过。不同的是，有些人把迷茫化作动力，把欲望化作能力，把苦难熬成光明。</p><p>关于未来，你要相信，只要努力坚持下去，就有可能看到光明。</p><p>曾听过这样一句话：我们一步步走下去，踏踏实实地去走，不抗拒命运交给我们的重负，才是一个勇者。</p><p>即使经历很多艰难困苦，依然积极面对生活；即使被嘲笑被冷落，依然选择坚持自己的梦想。</p><p>生活从来不会亏待认真努力的人，哪怕前方再多艰难险阻，只要你勇敢往前跑，就一定能看到阳光。<br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#只有放下，才能重新开始&lt;/p&gt;
+&lt;p&gt;我是演说家&lt;/p&gt;
+&lt;p&gt;Take Me Home,Country Roads&lt;br&gt;John Denver - Take Me Home Country Roads&lt;/p&gt;
+&lt;p&gt;来源：净物（ID：cystyle001）&lt;br&gt;图片：微博@加州夏扇&lt;/p&gt;
+&lt;p&gt;生而为人，烦恼总是相伴的。一旦纠结于自己无可奈何的事，便会痛苦不堪。想明白了，你就不会那么累了。&lt;/p&gt;
+&lt;p&gt;对过去，要淡。&lt;/p&gt;
+&lt;p&gt;你是否因为别人的想法，一而再地委屈自己？你是否因为他人做错的事情，一直耿耿于怀？你是否因为一段不再有可能的感情，久久不能释怀？&lt;/p&gt;
+&lt;p&gt;仔细想想，其实我们每个人都有这样的时候。虽然你竭尽所能，还是可能会遭遇工作的低谷、生活的窘迫、情感的失意、学业的压力……&lt;/p&gt;
+&lt;p&gt;不知你有没有听过这句话：“不要在一件别扭的事上纠缠太久。纠缠久了，你会烦，会痛，会厌，会累，会神伤，会心碎。实际上，到最后，你不是跟事过不去，而是跟自己过不去。无论多别扭，你都要学会抽身而退。”&lt;/p&gt;
+&lt;p&gt;曾看过这样一个故事：一个人上火车时不小心掉了一只新鞋，等火车开动了他才发现。这时，他毫不犹豫地把另一只鞋也从窗口扔了出去。其他乘客很不理解，他解释说，那双鞋不论多么昂贵，对他而言都已经失去作用了，而捡到这双鞋的人就不同了。所以，与其留一只对自己无用的鞋，倒不如选择放弃，或许会成全另一个人呢？&lt;/p&gt;
+&lt;p&gt;有些人，有些事，该放手就要放手，该不在乎就不在乎。人生在世，很多事情，只有放下，才能重新开始。&lt;br&gt;&lt;a href=&quot;https://mmbiz.qpic.cn/mmbiz_jpg/qia9PLAqFQ6PCNCvPKENIpQPdzGufYNtXuu8vJoAPqdk5AoTIO9IIOTnSBORuMAp9QhicCf8buUAuzboiaKtcicLYg/640?wx_fmt=jpeg&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mmbiz.qpic.cn/mmbiz_jpg/qia9PLAqFQ6PCNCvPKENIpQPdzGufYNtXuu8vJoAPqdk5AoTIO9IIOTnSBORuMAp9QhicCf8buUAuzboiaKtcicLYg/640?wx_fmt=jpeg&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/images/image.png&quot; alt=&quot;overwrote existing file&quot;&gt;&lt;br&gt;对未来，要信。&lt;/p&gt;
+&lt;p&gt;人这一辈子，总是不知不觉背了很多压力。常听到有人抱怨：对未来感到迷茫，觉得生活没有期盼。&lt;/p&gt;
+&lt;p&gt;其实，大家都一样，谁都迷茫过。不同的是，有些人把迷茫化作动力，把欲望化作能力，把苦难熬成光明。&lt;/p&gt;
+&lt;p&gt;关于未来，你要相信，只要努力坚持下去，就有可能看到光明。&lt;/p&gt;
+&lt;p&gt;曾听过这样一句话：我们一步步走下去，踏踏实实地去走，不抗拒命运交给我们的重负，才是一个勇者。&lt;/p&gt;
+&lt;p&gt;即使经历很多艰难困苦，依然积极面对生活；即使被嘲笑被冷落，依然选择坚持自己的梦想。&lt;/p&gt;
+&lt;p&gt;生活从来不会亏待认真努力的人，哪怕前方再多艰难险阻，只要你勇敢往前跑，就一定能看到阳光。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="我是演说家系列" scheme="http://yoursite.com/categories/%E6%88%91%E6%98%AF%E6%BC%94%E8%AF%B4%E5%AE%B6%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="鸡汤" scheme="http://yoursite.com/tags/%E9%B8%A1%E6%B1%A4/"/>
     
   </entry>
   
@@ -56,38 +127,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>写文字参数</title>
-    <link href="http://yoursite.com/2013/07/13/post/"/>
-    <id>http://yoursite.com/2013/07/13/post/</id>
-    <published>2013-07-13T12:46:25.000Z</published>
-    <updated>2013-07-13T12:46:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>由于我比较笨还英文不好，所以按照 Gitalk 提供的文档给 Hexo 添加评论功能，简直就是不能行！各种报错后，翻看 Issues、Google、百度… 用了一天时间终于 Gitalk 可用了。<br>这里我分享一下我的添加过程与报错问题的解决方法，供参考借鉴！</p><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;由于我比较笨还英文不好，所以按照 Gitalk 提供的文档给 Hexo 添加评论功能，简直就是不能行！各种报错后，翻看 Issues、Google、百度… 用了一天时间终于 Gitalk 可用了。&lt;br&gt;这里我分享一下我的添加过程与报错问题的解决方法，供参考借鉴！&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="艺术" scheme="http://yoursite.com/tags/%E8%89%BA%E6%9C%AF/"/>
-    
-      <category term="书法" scheme="http://yoursite.com/tags/%E4%B9%A6%E6%B3%95/"/>
-    
-      <category term="博客搭建" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="个人空间" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA%E7%A9%BA%E9%97%B4/"/>
     
   </entry>
   
