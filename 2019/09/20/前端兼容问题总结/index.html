@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="爱设计、爱前端、爱摄影、爱生活、爱绘画、爱书法">
+  
+  
+    <meta name="description" content="记录生活和工作的个人网站">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    前端兼容问题总结 |
+    
+    S.R.T</title>
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <script src="/js/pace.min.js"></script>
+</head>
+</html>
+<body>
+<main class="content">
+  <section class="outer">
+  <article id="post-前端兼容问题总结" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      前端兼容问题总结
+    </h1>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2019/09/20/前端兼容问题总结/" class="article-date">
+  <time datetime="2019-09-20T05:42:23.000Z" itemprop="datePublished">2019-09-20</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h3 id="vue遇到的input-框银行卡格式输入四位后光标错位的修复"><a href="#vue遇到的input-框银行卡格式输入四位后光标错位的修复" class="headerlink" title="vue遇到的input 框银行卡格式输入四位后光标错位的修复"></a>vue遇到的input 框银行卡格式输入四位后光标错位的修复</h3><pre><code>// pos 是输入的值长度
+_this.$nextTick(() =&gt; {
+   if (pos != -1) {
+      setTimeout(() =&gt; {
+      document.getElementById(&apos;accountInput&apos;).setSelectionRange(pos, pos); // 处理光标显示问题
+   }, 0);
+}
+</code></pre><h3 id="浏览器的window-open-打开新页面ie-11-不兼容的处理方式"><a href="#浏览器的window-open-打开新页面ie-11-不兼容的处理方式" class="headerlink" title="浏览器的window.open() 打开新页面ie 11 不兼容的处理方式"></a>浏览器的window.open() 打开新页面ie 11 不兼容的处理方式</h3><pre><code>var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+var isIE = userAgent.indexOf(&quot;compatible&quot;) &gt; -1 &amp;&amp; userAgent.indexOf(&quot;MSIE&quot;) &gt; -1; //判断是否IE&lt;11浏览器
+if (isIE) {
+   var gotolink = document.createElement(&quot;a&quot;);
+   gotolink.href = _this.wxCodeUrl;
+   gotolink.setAttribute(&quot;target&quot;, &quot;_blank&quot;);
+   document.body.appendChild(gotolink);
+   gotolink.click();
+}
+</code></pre><h3 id="手机兼容问题，手机键盘顶掉部分内容导致空白块"><a href="#手机兼容问题，手机键盘顶掉部分内容导致空白块" class="headerlink" title="手机兼容问题，手机键盘顶掉部分内容导致空白块"></a>手机兼容问题，手机键盘顶掉部分内容导致空白块</h3><pre><code>// vue 的处理方式
+this.$refs.replyInput.scrollIntoView(true); // replyInput是外层容器ref值
+// 原生的处理方式
+   document.querySelector(&quot;#body&quot;).scrollTop = 0; // #body是外层容器
+</code></pre><h3 id="判断是什么端打开，和唤醒app"><a href="#判断是什么端打开，和唤醒app" class="headerlink" title="判断是什么端打开，和唤醒app"></a>判断是什么端打开，和唤醒app</h3><pre><code>// 如果是pc端打开
+if (!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent){
+}
+// 各种端判断
+var browser = {
+versions: (function() {
+   var u = navigator.userAgent,
+   app = navigator.appVersion;
+   return {
+      trident: u.indexOf(&quot;Trident&quot;) &gt; -1 /*IE内核*/,
+      presto: u.indexOf(&quot;Presto&quot;) &gt; -1 /*opera内核*/,
+      webKit: u.indexOf(&quot;AppleWebKit&quot;) &gt; -1 /*苹果、谷歌内核*/,
+      gecko: u.indexOf(&quot;Gecko&quot;) &gt; -1 &amp;&amp; u.indexOf(&quot;KHTML&quot;) == -1 /*火狐内核*/,
+      mobile: !!u.match(/AppleWebKit.*Mobile.*/) /*是否为移动终端*/,
+      ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) /*ios终端*/,
+      android:
+      u.indexOf(&quot;Android&quot;) &gt; -1 ||
+      u.indexOf(&quot;Linux&quot;) &gt; -1 /*android终端或者uc浏览器*/,
+      iPhone: u.indexOf(&quot;iPhone&quot;) &gt; -1 /*是否为iPhone或者QQHD浏览器*/,
+      iPad: u.indexOf(&quot;iPad&quot;) &gt; -1 /*是否iPad*/,
+      webApp: u.indexOf(&quot;Safari&quot;) == -1 /*是否web应该程序，没有头部与底部*/,
+      souyue: u.indexOf(&quot;souyue&quot;) &gt; -1,
+      superapp: u.indexOf(&quot;superapp&quot;) &gt; -1,
+      weixin: u.toLowerCase().indexOf(&quot;micromessenger&quot;) &gt; -1,
+      Safari: u.indexOf(&quot;Safari&quot;) &gt; -1
+   };
+})(),
+language: (navigator.browserLanguage || navigator.language).toLowerCase()
+};
+
+// APP下使用唤醒微信方法
+phonegap.changeToWeixin();
+</code></pre><h3 id="银行卡的标准格式过滤正则-例如-：8888-8889-7776-6556-556"><a href="#银行卡的标准格式过滤正则-例如-：8888-8889-7776-6556-556" class="headerlink" title="银行卡的标准格式过滤正则 例如 ：8888 8889 7776 6556 556"></a>银行卡的标准格式过滤正则 例如 ：8888 8889 7776 6556 556</h3><pre><code>// 银行卡每四位空一格 原生处理方式
+let cardID = &apos;8888888977766556556&apos;
+cardID = cardID.replace(/\s/g,&apos;&apos;).replace(/\D/g,&apos;&apos;).replace(/(\d{4})(?=\d)/g,&quot;$1 &quot;)
+alert(&apos;最后输出cardID：8888 8889 7776 6556 556&apos;)
+// vux ui 框架方式，mask可以自定义文本的显示格式
+&lt;x-input v-model=&quot;account&quot; :type=&quot;&apos;tel&apos;&quot;  :mask=&quot;&apos;9999 9999 9999 9999 999&apos;&quot;&gt;&lt;/x-input&gt;
+</code></pre><h3 id="vue新建一个全局的的过滤器"><a href="#vue新建一个全局的的过滤器" class="headerlink" title="vue新建一个全局的的过滤器"></a>vue新建一个全局的的过滤器</h3><pre><code>第一步：新建一个filter.es6 文件
+第二步：在filter.es6文件里面写一个或者多个过滤器
+export function filter1 (value) { // 过滤器1
+   if (typeof value === &apos;undefined&apos; || value === &apos;&apos; || value === null || value === &apos;undefined&apos;) {
+      return rank+1
+   }  
+}
+export function filter2 (value) { // 过滤器1
+   if (typeof value === &apos;undefined&apos; || value === &apos;&apos; || value === null || value === &apos;undefined&apos;) {
+      return rank+1
+   }  
+}
+第三步：全局过滤器注册，在main.js 头部写入这段遍历注册
+Object.keys(filters).forEach(key =&gt; { 
+   Vue.filter(key, filters[key])
+})
+第四步：1.标签里面调用
+&lt;i class=&quot;title&quot; &gt;{{item | filter1}}&lt;/i&gt;
+2.逻辑代码里面调用 filter.filter1(val)
+</code></pre><h3 id="vue本地设置跨域代理"><a href="#vue本地设置跨域代理" class="headerlink" title="vue本地设置跨域代理"></a>vue本地设置跨域代理</h3><pre><code>第一步：打开/config/index.js文件
+第二步：找到dev:{} 在里面添加如下代码
+proxyTable: {  // 设置跨域
+   &apos;/amway-v-shopping&apos;: {
+   target: &apos;https://cn3ewalletqa.amwaynet.com.cn/amway-v-shopping/&apos;,  //目标接口域名
+   changeOrigin: true,  //是否跨域
+   pathRewrite: {
+   &apos;^/amway-v-shopping&apos;: &apos;/&apos;   //重写接口
+   }
+}
+</code></pre><h3 id="vue全局定义环境变量使用"><a href="#vue全局定义环境变量使用" class="headerlink" title="vue全局定义环境变量使用"></a>vue全局定义环境变量使用</h3><pre><code>1.打开这个文件：config/prod.env.js 添加一个变量weiXinAccountUrl
+let _export = {
+   weiXinAccountUrl:&apos;http://baiud.com&apos;
+}
+
+2.其他页面调用weiXinAccountUrl: 
+   process.env.weiXinAccountUrl
+</code></pre><h3 id="vue-app中唤醒支付宝授权"><a href="#vue-app中唤醒支付宝授权" class="headerlink" title="vue app中唤醒支付宝授权"></a>vue app中唤醒支付宝授权</h3><pre><code>phonegap.callAliAuth(code, (aliData) =&gt; { // 唤醒支付宝授权
+   var _aliDataResult = {
+         &quot;auth_code&quot;:&apos;&apos;,
+         &quot;result_code&quot;:&apos;&apos;
+   }
+   if (aliData.resultStatus == &apos;9000&apos; || aliData.status === &apos;9000&apos;)  {
+      aliData.result.split(&apos;&amp;&apos;).forEach(item =&gt; {
+         var _items = item.split(&apos;=&apos;);
+         if (typeof _aliDataResult[_items[0]] !== &apos;undefined&apos;) {
+         _aliDataResult[_items[0]] = _items[1];
+         }
+      });
+      if (_aliDataResult.result_code == &apos;200&apos;) { // 支付宝授权成功
+      } else {
+      }
+      } else {
+   }
+   }, (error) =&gt; {
+});
+</code></pre><h3 id="vue-app中唤醒微信授权"><a href="#vue-app中唤醒微信授权" class="headerlink" title="vue app中唤醒微信授权"></a>vue app中唤醒微信授权</h3><pre><code>phonegap.wechatOAuth(data =&gt; { // 唤醒微信授权
+   if (data.result &amp;&amp; data.result == &quot;Y&quot;) { // 微信授权成功之后
+   } else {
+      if (data.msg &amp;&amp; data.msg.indexOf(&quot;WX not installed&quot;) != -1) { 
+         //未安装微信
+      }
+   }
+});
+</code></pre><h3 id="异步请求的不可忽视的一点，异步请求的方法相应慢导致不进入判断"><a href="#异步请求的不可忽视的一点，异步请求的方法相应慢导致不进入判断" class="headerlink" title="异步请求的不可忽视的一点，异步请求的方法相应慢导致不进入判断"></a>异步请求的不可忽视的一点，异步请求的方法相应慢导致不进入判断</h3><pre><code>let name = {}
+queryWXUserinfo(){ // 异步方法
+let _this = this
+_this.showLoading();
+_this.$http.post(...api.queryWXUserinfo({code:code})).then(res =&gt; {
+   _this.hideLoading();
+   if (res.data.succeeded === true) { 
+      _this.PCWXInfo = res.data.result
+   }
+}).catch(() =&gt; {
+   _this.hideLoading();
+   _this.$store.commit(&apos;UPDATE_NETERROR_SHOW&apos;, true);
+});
+},
+name = _this.PCWXInfo.name
+if(name+6 === 9){ // 如果此处的异步方法没有反回来值那就不会进入此块
+   // 执行接下来要做的事
+}
+</code></pre><h3 id="vscode前端开发软件导致发热，在code-》preferences-》settings-json加以下代码"><a href="#vscode前端开发软件导致发热，在code-》preferences-》settings-json加以下代码" class="headerlink" title="vscode前端开发软件导致发热，在code-》preferences -》settings.json加以下代码"></a>vscode前端开发软件导致发热，在code-》preferences -》settings.json加以下代码</h3><pre><code>{
+   &quot;explorer.confirmDelete&quot;: false,
+   &quot;files.autoSave&quot;: &quot;off&quot;,
+   &quot;workbench.colorTheme&quot;: &quot;Visual Studio Dark&quot;,
+   &quot;search.followSymlinks&quot;: false,
+   &quot;files.exclude&quot;: {
+      &quot;**/.git&quot;: true,
+      &quot;**/.svn&quot;: true,
+      &quot;**/.hg&quot;: true,
+      &quot;**/CVS&quot;: true,
+      &quot;**/.DS_Store&quot;: true,
+      &quot;**/tmp&quot;: true,
+      &quot;**/node_modules&quot;: true,
+      &quot;**/bower_components&quot;: true
+   },
+   &quot;files.watcherExclude&quot;: {
+      &quot;**/.git/objects/**&quot;: true,
+      &quot;**/.git/subtree-cache/**&quot;: true,
+      &quot;**/node_modules/**&quot;: true,
+      &quot;**/tmp/**&quot;: true,
+      &quot;**/bower_components/**&quot;: true
+   }
+}
+</code></pre><h3 id="Edge-浏览器-localStorage-setItem值bug"><a href="#Edge-浏览器-localStorage-setItem值bug" class="headerlink" title="Edge 浏览器 localStorage.setItem值bug"></a>Edge 浏览器 localStorage.setItem值bug</h3><pre><code>处理方法：
+   localStorage.setItem的时候不能正常setItem要先localStorage.removeItem
+</code></pre><h3 id="IE-11-浏览器-夸窗口共享的时候取不到localStorage的值"><a href="#IE-11-浏览器-夸窗口共享的时候取不到localStorage的值" class="headerlink" title="IE 11 浏览器 夸窗口共享的时候取不到localStorage的值"></a>IE 11 浏览器 夸窗口共享的时候取不到localStorage的值</h3><pre><code>处理方法：
+   localStorage.setItem(&apos;itemVal&apos;, &apos;&apos;) // 随便setItem一个值
+</code></pre><h3 id="最新的ios-13版本的系统-border-radius的圆角出现倒换，就是设置左上角出现圆角在左下角的情况"><a href="#最新的ios-13版本的系统-border-radius的圆角出现倒换，就是设置左上角出现圆角在左下角的情况" class="headerlink" title="最新的ios 13版本的系统 border-radius的圆角出现倒换，就是设置左上角出现圆角在左下角的情况"></a>最新的ios 13版本的系统 border-radius的圆角出现倒换，就是设置左上角出现圆角在左下角的情况</h3><pre><code>处理方法：
+   -webkit-overflow-scrolling: none;或者是去掉这个属性
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/09/20/前端兼容问题总结/" data-id="ck2yh5zy900107nede6cmx6a3" class="article-share-link">分享</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+    
+      <a href="/2019/06/14/Markdown-基本语法/" class="article-nav-link">
+        <strong class="article-nav-caption">Olde posts</strong>
+        <div class="article-nav-title">Markdown 基本语法</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  <div class="gitalk" id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '8261361fbbb2b90e5742',
+      clientSecret: '9a94ed40e0666bfc55f9717bfc3e3d5efea8aa09',
+      repo: 'comments',
+      owner: 'shenrentong',
+      admin: ['shenrentong'],
+      // id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: md5(location.pathname),
+      distractionFreeMode: false,  // Facebook-like distraction free mode
+      pagerDirection: 'last'
+    })
+
+  gitalk.render('gitalk-container')
+  </script>
+
+  
+  
+  
+    <! -- 添加捐赠图标 -->
+<div class="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           &uarr;<br>
+           有帮助？意思一下
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden">
+        <!-- 支付宝打赏图案 -->
+        <img src="/images/weCode.jpg" alt="支付宝打赏">
+        <!-- 微信打赏图案 -->
+        <!-- img src="/img/weixin.jpg" alt="微信打赏" -->  
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+<! -- 添加捐赠图标 -->
+  
+</article>
+
+
+
+</section>
+  <footer class="footer">
+  
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+    <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>&copy; 2019 S.R.T</li>
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>Theme  <a href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+
+</main>
+<aside class="sidebar">
+  <button class="navbar-toggle"></button>
+
+<nav class="navbar">
+  
+    <div class="logo">
+      <a href="/"><img src="/images/logo.png" alt="S.R.T"></a>
+    </div>
+  
+  <ul class="nav nav-main">
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/">主页</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/archives">归档</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/gallery">绘画</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/about">简历</a>
+      </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="搜索">
+        <i class="fe fe-search"></i>
+        查找
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+      <li class="nav-item">
+          <div class="totop" id="totop">
+    <i class="fe fe-rocket"></i>
+</div>
+      </li>
+    <li class="nav-item">
+      
+        <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+          <i class="fe fe-feed"></i>
+        </a>
+      
+    </li>
+  </ul>
+</nav>
+
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+</aside>
+<script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/lazyload.min.js"></script>
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+
+  <script src="/js/search.js"></script>
+
+
+<script src="/js/ocean.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"center","width":145,"height":315},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+</html>

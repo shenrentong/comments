@@ -1628,9 +1628,9 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
-    color: #fff;
+    background-color: #eeeeec;
+    background: linear-gradient(to top, #f5f5f5, #f5f5f5);
+    color: #ccb9a4;
     padding: 1rem;
     opacity: 0;
     transform: translateY(100%);
